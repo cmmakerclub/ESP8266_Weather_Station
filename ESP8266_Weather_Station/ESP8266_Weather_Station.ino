@@ -1,4 +1,6 @@
-#include <WiFiHelper.h>
+#include <WiFiConnector.h>
+#include <PubSubClient.h>
+#include <ArduinoJson.h>
 
 /*===== START INCLUDE =====*/
 #include <ESP8266WiFi.h>
@@ -87,7 +89,7 @@ int v = 0;
 const char* ssid     = "noe";
 const char* pass     = "12345678";
 
-WiFiHelper wifi(ssid, pass);
+WiFiConnector wifi(ssid, pass);
 
 void init_wifi()
 {
